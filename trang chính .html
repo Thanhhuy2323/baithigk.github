@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background: #054687;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            height: 100vh;
+        }
+        .sidebar img {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .sidebar h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .sidebar p {
+            font-size: 30px;
+            margin-bottom: 25 px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 023;
+        }
+        .sidebar ul li {
+            padding: 25px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .sidebar ul li a {
+            color: rgba(10, 237, 93, 0.966);
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li:hover, .sidebar ul li.active {
+            background: #ef060d;
+        }
+
+        /* Nội dung chính */
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            background: #f4f4f4;
+        }
+        .content iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="C:\Users\ADMIN\Pictures\Saved Pictures\profile .png" alt="Ảnh đại diện">
+        <h1>TRẦN VŨ GIA HUY </h1>
+        <p>KỸ THUẬT VIÊN MÁY TÍNH VÀ TỔNG QUẢN LÝ </p>
+        <ul>
+            <li><a href="thong tin .html" target="content-frame">THÔNG TIN CÁ NHÂN</a></li>
+            <li><a href="cong viec .html" target="content-frame">CÔNG VIỆC </a></li>
+            <li><a href="hoc van .html" target="content-frame">HỌC VẤN</a></li>
+            <li><a href="ky nang .html" target="content-frame">KỸ NĂNG </a></li>
+            <li><a href=" lien he .html" target="content-frame">LIÊN HỆ </a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <iframe src="about.html" name="content-frame"></iframe>
+    </div>
+</body>
+</html>
